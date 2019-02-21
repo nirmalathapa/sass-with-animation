@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%; // overall setting for the entire page defines what 1 rem is redefining browser default size
+}
+/* inheritence */
+
+body {
+  box-sizing: border-box;
+}
