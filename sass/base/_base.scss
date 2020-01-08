@@ -7,7 +7,23 @@
 }
 
 html{
-  font-size: 62.5%; // overall setting for the entire page defines what 1 rem is redefining browser default size
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5% overall setting for the entire page defines what 1 rem is redefining browser default size
+  
+  @include respond(tab-land) { // < 900
+    font-size: 56.25%; //1rem = 9px, 8/16 = 50% 
+  }
+  
+  @include respond(tab-port) { // < 600
+    font-size: 50%; //1rem = 8px, 8/16 = 50%
+  }
+  
+  @include respond(phone) { // < 600
+    font-size: 37%; //1rem = 6px, 6/16 = 50% 
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16 
+  }      
 }
 /* inheritence */
 
